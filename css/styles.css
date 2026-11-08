@@ -39,6 +39,10 @@ a:hover {
   background-color: gold;
 } */
 
+/* #carousel {
+  height: 50px;
+} */
+
 .welcome-bar {
   padding: 8px 16px;
   color: #f9f7f0;
@@ -773,6 +777,14 @@ h3 {
 
 .contact-callout a {
   color: #e6c98e;
+}
+
+#carousel .carousel-item img {
+  display: block;
+  width: min(100%, 900px);
+  height: clamp(240px, 45vw, 480px);
+  margin-inline: auto;
+  object-fit: contain;
 }
 
 @media (max-width: 767.98px) {
