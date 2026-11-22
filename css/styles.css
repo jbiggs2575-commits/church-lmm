@@ -341,6 +341,11 @@ h3 {
   gap: 14px;
 }
 
+.welcome-gallery img.welcome-gallery-sign {
+  background: var(--sage);
+  object-fit: contain;
+}
+
 .welcome-photo {
   min-height: 430px;
   background: #e9e8df url("https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1100&q=85") center / cover no-repeat;
@@ -503,6 +508,11 @@ h3 {
   color: #fff;
 }
 
+.footer-brand .brand-logo {
+  filter: invert(1);
+  mix-blend-mode: screen;
+}
+
 .footer-brand:hover {
   color: #fff;
 }
@@ -535,6 +545,36 @@ h3 {
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.faith {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin: 0;
+  padding: 46px 24px;
+  border-top: 3px solid var(--gold);
+  color: var(--forest);
+  background: linear-gradient(120deg, var(--sage), var(--cream) 55%, #f1f3eb);
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.faith::before {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  right: max(8%, calc((100% - 1100px) / 2));
+  width: 150px;
+  aspect-ratio: 1;
+  background: url("../pics/doveLogo.jpeg") center / contain no-repeat;
+  content: "";
+  opacity: 0.12;
+  transform: translateY(-50%);
+  mix-blend-mode: multiply;
 }
 
 .page-intro {
@@ -629,8 +669,65 @@ h3 {
   background: var(--cream);
 }
 
+.churchHistory {
+  max-width: 900px;
+  margin: 32px auto 48px;
+  padding: 38px clamp(24px, 5vw, 58px);
+  border-top: 5px solid var(--gold);
+  border-left: 1px solid rgba(24, 58, 50, 0.12);
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 16px 45px rgba(24, 58, 50, 0.12);
+}
+
+.churchHistory + .churchHistory,
+.churchHistory + .row,
+.row + .churchHistory {
+  margin-top: 48px;
+}
+
+.churchHistory h2 {
+  margin-bottom: 18px;
+  color: var(--forest);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+}
+
+.churchHistory p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.02rem;
+  line-height: 1.85;
+}
+
+.churchHistory p + p {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(24, 58, 50, 0.12);
+}
+
+.ghana-photo-grid {
+  display: grid;
+  margin-top: 28px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.ghana-photo-grid img {
+  width: 100%;
+  height: 280px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.leadership-row {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
 .member-card {
+  display: flex;
   height: 100%;
+  flex-direction: column;
   overflow: hidden;
   border: 0;
   background: #fff;
@@ -639,19 +736,27 @@ h3 {
 
 .member-card-photo {
   display: grid;
-  min-height: 280px;
+  position: relative;
+  height: 280px;
+  min-height: 0;
   place-items: center;
-  padding: 20px;
+  overflow: hidden;
   color: var(--muted);
   background: #e9eee7;
   text-align: center;
 }
 
 .member-card-photo img {
+  position: absolute;
+  inset: 0;
+  display: block;
   width: 100%;
   height: 100%;
-  min-height: 280px;
   object-fit: cover;
+}
+
+.member-card-photo img.bishop-fredrick-image {
+  object-position: center 10%;
 }
 
 .member-card-photo span {
@@ -662,11 +767,19 @@ h3 {
 }
 
 .member-card .card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
   padding: 22px 24px;
 }
 
 .member-card h2 {
-  margin-bottom: 6px;
+  min-height: 76px;
+  margin: 0;
+  display: grid;
+  align-items: center;
+  padding: 16px 18px 10px;
   color: var(--forest);
   font-family: var(--serif);
   font-size: 1.5rem;
@@ -846,9 +959,9 @@ h3 {
   }
 
   .welcome-gallery-stack {
-    height: 230px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, minmax(0, 1fr));
+    height: 240px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: 1fr;
   }
 
   .welcome-copy {
@@ -887,6 +1000,24 @@ h3 {
 
   .page-intro {
     padding: 66px 0;
+  }
+
+  .faith {
+    padding: 36px 20px;
+  }
+
+  .faith::before {
+    right: 6%;
+    width: 110px;
+    opacity: 0.1;
+  }
+
+  .ghana-photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ghana-photo-grid img {
+    height: 240px;
   }
 
   .story-section,
