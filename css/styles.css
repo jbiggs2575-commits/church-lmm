@@ -315,6 +315,91 @@ h3 {
   color: #fff;
 }
 
+.daily-bible {
+  background: var(--sage);
+}
+
+.daily-bible-card {
+  display: grid;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  border: 1px solid rgba(24, 58, 50, 0.1);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 16px 40px rgba(24, 58, 50, 0.1);
+}
+
+.daily-bible-art {
+  display: grid;
+  min-height: 320px;
+  place-items: center;
+  padding: 34px;
+  background: linear-gradient(145deg, #f3ead8, #e9eee7);
+}
+
+.daily-bible-art img {
+  display: block;
+  width: min(100%, 360px);
+  max-height: 280px;
+}
+
+.daily-bible-content {
+  align-self: center;
+  padding: clamp(30px, 5vw, 64px);
+}
+
+.daily-bible-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.daily-bible-meta .eyebrow {
+  margin: 0;
+  color: #8b7755;
+}
+
+.daily-bible-meta time {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.daily-bible-content h2 {
+  margin-bottom: 22px;
+  color: var(--forest);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+
+.daily-bible-quote {
+  margin: 0;
+  padding-left: 20px;
+  border-left: 3px solid var(--gold);
+}
+
+.daily-bible-quote p {
+  margin: 0 0 14px;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  line-height: 1.65;
+}
+
+.daily-bible-quote footer {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .section-space {
   padding: 104px 0;
 }
@@ -945,6 +1030,23 @@ h3 {
     padding: 70px 0;
   }
 
+  .daily-bible-card {
+    grid-template-columns: 1fr;
+  }
+
+  .daily-bible-art {
+    min-height: 220px;
+    padding: 24px;
+  }
+
+  .daily-bible-art img {
+    max-height: 190px;
+  }
+
+  .daily-bible-content {
+    padding: 30px 26px 34px;
+  }
+
   .welcome-photo {
     min-height: 300px;
   }
@@ -1046,6 +1148,12 @@ h3 {
 
   .ministry-detail-image {
     min-height: 230px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .welcome-copy {
+    padding-left: 12px;
   }
 }
 

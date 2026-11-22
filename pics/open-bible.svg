@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-labelledby="title">
+  <title id="title">Open Bible</title>
+  <path d="M56 77c58-19 117-8 184 29v190c-65-36-126-46-184-28V77Z" fill="#fffdf8" stroke="#183a32" stroke-linejoin="round" stroke-width="8"/>
+  <path d="M424 77c-58-19-117-8-184 29v190c65-36 126-46 184-28V77Z" fill="#fffdf8" stroke="#183a32" stroke-linejoin="round" stroke-width="8"/>
+  <path d="M240 106v190" fill="none" stroke="#d5a65a" stroke-linecap="round" stroke-width="8"/>
+  <path d="M84 119c44-8 88 0 127 17M84 151c44-8 88 0 127 17M84 183c44-8 88 0 127 17M84 215c44-8 88 0 127 17M396 119c-44-8-88 0-127 17M396 151c-44-8-88 0-127 17M396 183c-44-8-88 0-127 17M396 215c-44-8-88 0-127 17" fill="none" stroke="#b8c5bb" stroke-linecap="round" stroke-width="6"/>
+  <path d="M56 268c58-18 119-8 184 28 65-36 126-46 184-28" fill="none" stroke="#d5a65a" stroke-linecap="round" stroke-width="8"/>
+</svg>

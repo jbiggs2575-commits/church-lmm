@@ -69,10 +69,32 @@
       </div>
     </section>
 
+
+    <section class="daily-bible section-space" aria-labelledby="daily-bible-title">
+      <div class="container">
+        <div class="daily-bible-card">
+          <div class="daily-bible-art">
+            <img src="./pics/open-bible.svg" alt="Illustration of an open Bible">
+          </div>
+          <div class="daily-bible-content">
+            <div class="daily-bible-meta">
+              <p class="eyebrow">PAUSE &amp; REFLECT</p>
+              <time id="daily-verse-date"></time>
+            </div>
+            <h2 id="daily-bible-title">Today's Bible verse</h2>
+            <blockquote class="daily-bible-quote">
+              <p id="daily-verse-text">“Thy word is a lamp unto my feet, and a light unto my path.”</p>
+              <footer id="daily-verse-reference">Psalm 119:105 (KJV)</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="welcome" class="section-space">
       <div class="container">
         <div class="row align-items-center g-4">
-          <div class="col-lg-6">
+          <div class="col-xl-6">
             <div class="welcome-gallery">
               <img class="welcome-gallery-main" src="./pics/LivingMannaMinistries.jpg"
                 alt="Living Manna Ministries Church">
@@ -82,7 +104,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 welcome-copy">
+          <div class="col-xl-6 welcome-copy">
             <p class="eyebrow">A CHURCH FOR REAL LIFE</p>
             <h2>Faith grows best<br>in good company.</h2>
             <p class="body-copy">We’re a community learning to love God, care for each other, and show up for our
@@ -164,6 +186,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <script src="./js/daily-bible.js" defer></script>
 </body>
 
 </html>
