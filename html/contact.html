@@ -33,8 +33,6 @@
           <li class="nav-item"><a class="nav-link" href="./meet.html">Meet our Church</a></li>
           <li class="nav-item"><a class="nav-link" href="./ministries.html">Ministries</a></li>
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="./contact.html">Visit</a></li>
-          <!-- <li class="nav-item ms-lg-2"><a class="btn btn-primary-custom nav-visit" href="./contact.html">Plan your visit
-              <span aria-hidden="true">→</span></a></li> -->
         </ul>
       </div>
     </div>
@@ -57,9 +55,6 @@
               <h2>What to expect</h2>
               <h3>Sunday gatherings</h3>
               <p>10:00 &amp; 11:00 AM<br>Come as you are. Services last about an hour.</p>
-              <!-- <h3>For the kids</h3> -->
-              <!-- <p>Children’s programming is available during both services. Our team will help you find the right room
-                and get checked in.</p> -->
               <h3>What should I wear?</h3>
               <p>Whatever makes you comfortable. You’ll see everything from jeans to Sunday best.</p>
             </div>
@@ -68,6 +63,15 @@
             <div class="visit-photo" role="img" aria-label="Sunlight falling into a welcoming church sanctuary"></div>
           </div>
         </div>
+
+        <section class="upcoming-events-section" aria-labelledby="upcoming-events-title">
+          <div class="upcoming-events-heading">
+            <p class="eyebrow">SAVE THE DATE</p>
+            <h2 id="upcoming-events-title">Upcoming Events</h2>
+            <p>Join us for what’s coming up at Living Manna Ministries.</p>
+          </div>
+          <div class="upcoming-events-list" id="church-upcoming-events" aria-live="polite"></div>
+        </section>
         <div class="row g-4 mt-2 align-items-stretch">
           <div class="col-lg-6">
             <div class="visit-card">
@@ -76,7 +80,7 @@
               <address>82 E 3rd St<br>Peru, IN 46970</address>
               <p class="mt-3">There’s visitor parking near the main entrance and handicap parking. Look for our welcome team outside—we’ll
                 help you find your way.</p><a class="text-link mt-3"
-                href="https://maps.google.com/?q=123+Main+Street+Your+City" target="_blank"
+                href="https://www.google.com/maps/dir/?api=1&amp;destination=82%20E%203rd%20St%2C%20Peru%2C%20IN%2046970" target="_blank"
                 rel="noopener noreferrer">Open directions <span aria-hidden="true">↗</span></a>
             </div>
           </div>
@@ -84,9 +88,13 @@
             <div class="contact-callout h-100">
               <p class="eyebrow light-eyebrow">HAVE A QUESTION?</p>
               <h2>We’re happy to help.</h2>
-              <p>Reach out before you come, and a real person from our team will get back to you.</p><a
-                href="mailto:hello@yourchurch.org">hello@yourchurch.org</a><br><a href="tel:+17654604705">(765)460-4705</a>
-                <br><a href="https://www.facebook.com/profile.php?id=61567295491400" target="_blank" rel="noopener noreferrer">Facebook<span aria-hidden="true">↗</span></a>
+              <p>Reach out before you come, and a real person from our team will get back to you.</p>
+              <!-- <br><a href="tel:+17654604705">(765)460-4705</a> -->
+                <br><a class="facebook-link" href="https://www.facebook.com/profile.php?id=61567295491400" target="_blank" rel="noopener noreferrer" aria-label="Visit Living Manna Ministries on Facebook">
+                  <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+                    <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.02 4.388 11.018 10.125 11.927v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.696 4.533-4.696 1.312 0 2.686.236 2.686.236v2.976h-1.513c-1.49 0-1.956.931-1.956 1.886v2.261h3.328l-.532 3.49h-2.796V24C19.612 23.091 24 18.093 24 12.073Z"/>
+                  </svg>
+                </a>
             </div>
           </div>
         </div>
@@ -108,6 +116,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <script src="../js/church-events.js" defer></script>
 </body>
 
 </html>
