@@ -1,6 +1,8 @@
 const churchEvents = [
   // Add events as { date: "YYYY-MM-DD", title: "Event name", time: "6:00 PM" }.
-  { date: "2026-12-13", title: "Billy Ballenger", time: "10:00 AM", website: "https://billyballenger.com" }
+  { date: "2026-12-13", title: "Billy Ballenger", time: "10:00 AM", website: "https://billyballenger.com" },
+
+  { date: "2027-01-09", title: "Every second Saturday of the month", time: "10:00 AM", website: "https://www.livingmannaministries.org/ministries/men-fellowship" },
 ];
 
 const eventsContainer = document.querySelector("#church-upcoming-events");
